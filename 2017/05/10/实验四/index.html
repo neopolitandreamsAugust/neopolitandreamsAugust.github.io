@@ -3,14 +3,54 @@
 <head>
   <meta charset="utf-8">
   
-  <title>谈亮亮的博客</title>
+  <title>实验四 Gradle的使用 | 谈亮亮的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="谈亮亮的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
+
+在项目的Gradle脚本的android领域中，添加productFlavors领">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实验四 Gradle的使用">
+<meta property="og:url" content="http://yoursite.com/2017/05/10/实验四/index.html">
 <meta property="og:site_name" content="谈亮亮的博客">
+<meta property="og:description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
+
+在项目的Gradle脚本的android领域中，添加productFlavors领">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgbjsqb9oj30am06ka9u.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgbmt781jj30dj09cjrd.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgerc2bi1j30bi01pq2p.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffge07rec4j30b401mwe9.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgeyzni50j30oh0rfmxa.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgf9oou9uj30f803lmwy.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgfdbiyy3j30bk021jr5.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/006gE8KUgy1ffgfcgcvvjj309y022gld.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgcfwc1kwj307g0250sh.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgcfxbk0fj305w02cdfl.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgct479w7j30eb01ujr5.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgcxu4f4yj30d203a743.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/small/006gE8KUgy1ffgd45h58oj30hs0483yb.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgdrjqttqj30b10810sz.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/small/006gE8KUgy1ffgdnj9dv4j30gb067jr9.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/small/006gE8KUgy1ffgdqcfd64j30d2034t8i.jpg">
+<meta property="og:updated_time" content="2017-05-10T10:23:29.780Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="谈亮亮的博客">
+<meta name="twitter:title" content="实验四 Gradle的使用">
+<meta name="twitter:description" content="一、实验目的1.掌握Gradle的使用
+二、试验任务1.生成多个apk2.管理依赖库3.编译提速4.增加编译内存5.调用终端指令6.精简资源7.清除缓存
+三、实验步骤和结果1.生成多个apk
+首先在AndroidManifest.xml文件的Application节点下，穿件如下图所示的meta_data节点
+ 
+
+在项目的Gradle脚本的android领域中，添加productFlavors领">
+<meta name="twitter:image" content="http://wx4.sinaimg.cn/small/006gE8KUgy1ffgben7jlmj308l01u3ya.jpg">
   
     <link rel="alternate" href="/atom.xml" title="谈亮亮的博客" type="application/atom+xml">
   
@@ -63,9 +103,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-实验四" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-实验四" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/05/10/实验四/" class="article-date">
   <time datetime="2017-05-10T10:23:12.000Z" itemprop="datePublished">2017-05-10</time>
@@ -78,8 +116,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/10/实验四/">实验四 Gradle的使用</a>
+    <h1 class="article-title" itemprop="name">
+      实验四 Gradle的使用
     </h1>
   
 
@@ -175,238 +213,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-实验三" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/12/实验三/" class="article-date">
-  <time datetime="2017-04-12T08:23:08.387Z" itemprop="datePublished">2017-04-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="实验三-使用Github管理Android项目"><a href="#实验三-使用Github管理Android项目" class="headerlink" title="实验三 使用Github管理Android项目"></a>实验三 使用Github管理Android项目</h1><h3 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h3><ul>
-<li>1.掌握Android Studio中Git的使用</li>
-<li>2.掌握Github管理项目<h3 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h3></li>
-<li>1.在Android Studio中新建</li>
-<li>2.添加VCS中的Git支持</li>
-<li>3.发布项目到Github</li>
-<li>4.在Android Studio中进行修改代码、提交、新建分支、合并等操作</li>
-<li>5.推送项目到Github</li>
-<li>6.如有多人合作，处理pull request<h3 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h3></li>
-<li>1.框架的构建，根据MC的logo我将新项目命名为Magic Cook<br><img src="http://i1.piimg.com/567571/b83c3ded7cc7948b.png" alt="图1"></li>
-<li>2.VCS -&gt; Import into Version Control -&gt; Share ProjectonGithub<br><img src="http://i2.muimg.com/567571/69457385b1763ae7.png" alt="图2"></li>
-<li>3.输入密码<br><img src="http://i2.muimg.com/567571/320e983bd12c8db1.png" alt="图3"></li>
-<li>4.完成分享<br><img src="http://i2.muimg.com/567571/e68501d336f7a032.png" alt="图4"></li>
-<li>5.发布完成后的Github界面<br><img src="http://i2.muimg.com/567571/5b956aa66c0504aa.png" alt="图5"><h3 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h3></li>
-<li>一开始我总是输错密码出现Unauthorized bad credentials，导致分享失败，找到原因以后分享很顺利，群组合作使用pull request很方便。</li>
-</ul>
+  
+    <a href="/2017/04/12/实验三/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/12/实验三/" data-id="cj2iu7u2g0001nwf6jctvgyzg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-实验二" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/28/实验二/" class="article-date">
-  <time datetime="2017-03-28T04:59:22.000Z" itemprop="datePublished">2017-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/28/实验二/">实验二git使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><ul>
-<li><p>１．掌握git使用</p>
-</li>
-<li><p>２．掌握使用Github作为远程仓库</p>
-</li>
-</ul>
-<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2><ul>
-<li><p>１．练习本地git操作</p>
-</li>
-<li><p>２．用SSH同步本地与Github仓库</p>
-</li>
-</ul>
-<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2><ul>
-<li><p>１．点repositories新建一个仓库 建立日记diary</p>
-</li>
-<li><p>２．点绿色的clone and download ３．把网页中新建的项目下载到本地并在APP中打开</p>
-</li>
-<li><p>3．按要求修改项目中的内容（用VScode）并在app内提交changes</p>
-</li>
-<li><p>4．在网页中确认结果</p>
-</li>
-</ul>
-<p>本地操作log截图<br><img src="http://i4.buimg.com/567571/534e47401c7816f7.png" alt="此处输入图片的描述"></p>
-<p>Github上commits截图<br><img src="http://i2.muimg.com/567571/343d61f413ac63da.png" alt="此处输入图片的描述"></p>
-<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><p>不知道在哪里修改项目中的内容　老师教我们用VScode就可以</p>
-<p>网页与app间的转换很方便很有趣</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/28/实验二/" data-id="cj2iu7u2g0002nwf6184xhdkf" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-实验一" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/13/实验一/" class="article-date">
-  <time datetime="2017-03-13T11:35:02.000Z" itemprop="datePublished">2017-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/实验一/">实验一</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="实验一-在Github上用Markdown创建技术博客"><a href="#实验一-在Github上用Markdown创建技术博客" class="headerlink" title="实验一 在Github上用Markdown创建技术博客"></a>实验一 在Github上用Markdown创建技术博客</h1><h2 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h2><blockquote>
-<ol>
-<li>熟悉Github网站</li>
-<li>掌握Markdown语法</li>
-</ol>
-</blockquote>
-<h2 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h2><blockquote>
-<ol>
-<li>注册Github账号</li>
-<li>创建Gihub Pages repository</li>
-<li>发布第一篇博客</li>
-<li>学习Markdown</li>
-<li>利用Hexo生成博客并部署到Github1.</li>
-</ol>
-</blockquote>
-<h2 id="三、实验步骤与结果"><a href="#三、实验步骤与结果" class="headerlink" title="三、实验步骤与结果"></a>三、实验步骤与结果</h2><blockquote>
-<ol>
-<li>访问github网站，创建个人账户。</li>
-<li>开始创建我的第一个博客</li>
-<li>发布第一篇博客，和同学互相访问各自的账户</li>
-<li>学习Markdown：<blockquote>
-<ol>
-<li>访问zybuluo.com,学习现成的语法规则。 </li>
-</ol>
-</blockquote>
-</li>
-<li>安装 node-v7.7.1-x86.msi</li>
-<li>安装 Git-2.1.2.0-32-bit.exe</li>
-<li>电脑 win+R 输入 cmd 回车，执行 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org命令" target="_blank" rel="external">https://registry.npm.taobao.org命令</a></li>
-<li>在命令窗口中直接执行 cnpm install -g hexo-cli</li>
-<li>在cmd命令窗口中，创建MD文件夹，执行语句为：mkdir MD</li>
-<li>打开MD，创建hexo文件夹：执行命令为：cd /d D:\MD,回车，执行：mkdir hexo</li>
-<li>打开hexo文件夹，执行hexo init hexo,执行语句为：cd /d D:\MD\hexo,回车，执行hexo init hexo 语句</li>
-<li>执行 cnpm install</li>
-<li>执行 hexo server</li>
-</ol>
-</blockquote>
-<h2 id="四、实验小结"><a href="#四、实验小结" class="headerlink" title="四、实验小结"></a>四、实验小结</h2><blockquote>
-<ol>
-<li>第一次接触github 很新颖 创建帐号的时候很有趣</li>
-</ol>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/13/实验一/" data-id="cj2iu7u2g0003nwf6osb87byc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/13/hello-world/" class="article-date">
-  <time datetime="2017-03-13T11:16:03.785Z" itemprop="datePublished">2017-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/13/hello-world/" data-id="cj2iu7u200000nwf61g6zh35f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
